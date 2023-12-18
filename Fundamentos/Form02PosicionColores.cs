@@ -36,7 +36,20 @@ namespace Fundamentos
             int verde = int.Parse(this.txtVerde.Text);
             int azul = int.Parse(this.txtAzul.Text);
 
-            this.BackColor = Color.FromArgb(rojo, verde, azul);
+            if(rojo < 0 || rojo >255)
+            {
+                MessageBox.Show("Un valor entre 0 y 255");
+            }else if (verde < 0 || verde >255)
+            {
+                MessageBox.Show("Un valor entre 0 y 255");
+            }else if (azul < 0 || azul > 255)
+            {
+                MessageBox.Show("Un valor entre 0 y 255");
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(rojo, verde, azul);
+            }
         }
     }
 }
