@@ -27,7 +27,7 @@ namespace Fundamentos
 
             //PONGAMOS QUE QUEREMOS ALINEAR EL 
             //TEXTO DE UNA CAJA
-            this.txtNombre.TextAlign = HorizontalAlignment.Right;
+            this.txtNombre.TextAlign = HorizontalAlignment.Left;
 
         }
     }
