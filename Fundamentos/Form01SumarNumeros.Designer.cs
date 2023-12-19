@@ -100,6 +100,7 @@
             Controls.Add(btnSumar);
             Name = "Form01SumarNumeros";
             Text = "Form01SumarNumeros";
+            Load += Form01SumarNumeros_Load;
             ResumeLayout(false);
             PerformLayout();
         }

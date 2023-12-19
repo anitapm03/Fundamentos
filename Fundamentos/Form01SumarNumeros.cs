@@ -24,7 +24,12 @@ namespace Fundamentos
 
             int suma = num1 + num2;
 
-            this.lblResultado.Text = suma.ToString(); 
+            this.lblResultado.Text = suma.ToString();
+        }
+
+        private void Form01SumarNumeros_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

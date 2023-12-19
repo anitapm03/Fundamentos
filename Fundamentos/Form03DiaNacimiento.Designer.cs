@@ -103,6 +103,7 @@
             btnCalcular.TabIndex = 7;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // Form03DiaNacimiento
             // 
