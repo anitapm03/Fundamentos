@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +14,26 @@ namespace ProyectoClases
 
     public class Persona
     {
+        #region CONSTRUCTORES
+
+        public Persona() 
+        {
+            Debug.WriteLine("Constructor VACIO Persona");
+        }
+
+        //la clase persona solo tiene un unico constructor con parametros
+        public Persona(string nombre, string apellidos)
+        {
+            Debug.WriteLine("Constructor 2 param Persona");
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+        }
+
+        #endregion
 
         #region PROPIEDADES
 
-        
+
         //conjunto para almacenar descripciones
         private string[] descripciones = new string[3];
         //propiedad indizada para almacenar descripciones

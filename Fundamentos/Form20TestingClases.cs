@@ -31,7 +31,7 @@ namespace Fundamentos
 
             persona.MetodoParametrosOpcionales(77);
             persona.MetodoParametrosOpcionales(88, 777);
-            persona.MetodoParametrosOpcionales(1,2,3);
+            persona.MetodoParametrosOpcionales(1, 2, 3);
 
             //solamente queremos enviar los param 1 y 3
             persona.MetodoParametrosOpcionales(1, numero3: 88);
@@ -52,10 +52,25 @@ namespace Fundamentos
             this.lstDatosClases.Items.Add("Edad: " + persona.Edad);
             this.lstDatosClases.Items.Add("Género: " + persona.Genero);
             this.lstDatosClases.Items.Add("Nacionalidad: " + persona.Nacionalidad);
-            
+
             this.lstDatosClases.Items.Add("Nombre completo: " + persona.GetNombreCompleto());
 
 
+        }
+
+        private void btnCrearEmpleado_Click(object sender, EventArgs e)
+        {
+            Empleado emp =  new Empleado();
+            this.lstDatosClases.Items.Add("Salario minimo emp: "
+                + emp.GetSalarioMinimmo());
+            this.lstDatosClases.Items.Add("Dias de vacaciones emp: "
+                + emp.GetDiasVacaciones());
+
+            Director dir = new Director();
+            this.lstDatosClases.Items.Add("Salario minimo director: "
+               + dir.GetSalarioMinimmo());
+            this.lstDatosClases.Items.Add("Dias de vacaciones director: "
+                + dir.GetDiasVacaciones());
         }
     }
 }
