@@ -33,7 +33,7 @@
             btnGuardar = new Button();
             btnLeer = new Button();
             btnNuevoProducto = new Button();
-            txtRaza = new TextBox();
+            txtPrecio = new TextBox();
             txtNombre = new TextBox();
             label2 = new Label();
             label1 = new Label();
@@ -88,12 +88,12 @@
             btnNuevoProducto.UseVisualStyleBackColor = true;
             btnNuevoProducto.Click += btnNuevoProducto_Click;
             // 
-            // txtRaza
+            // txtPrecio
             // 
-            txtRaza.Location = new Point(12, 96);
-            txtRaza.Name = "txtRaza";
-            txtRaza.Size = new Size(100, 23);
-            txtRaza.TabIndex = 12;
+            txtPrecio.Location = new Point(12, 96);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(100, 23);
+            txtPrecio.TabIndex = 12;
             // 
             // txtNombre
             // 
@@ -130,7 +130,7 @@
             Controls.Add(btnGuardar);
             Controls.Add(btnLeer);
             Controls.Add(btnNuevoProducto);
-            Controls.Add(txtRaza);
+            Controls.Add(txtPrecio);
             Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -147,7 +147,7 @@
         private Button btnGuardar;
         private Button btnLeer;
         private Button btnNuevoProducto;
-        private TextBox txtRaza;
+        private TextBox txtPrecio;
         private TextBox txtNombre;
         private Label label2;
         private Label label1;
